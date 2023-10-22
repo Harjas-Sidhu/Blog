@@ -1,0 +1,154 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+    width: 73.45%;
+    border-right: 0.1em solid var(--grey);
+    border-bottom: 0.1em solid var(--grey);
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+
+.hero > *{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img{
+    aspect-ratio: 2;
+    width: 75%;
+    position: relative;
+    top: 0%;
+    left: 0;
+}
+
+.tag{
+    height: 6%;
+    width: 22%;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 34%;
+    bottom: 2%;
+}
+
+.title{
+    font-size: 200%;
+    position: relative;
+    top: -3%;
+    left: 0%;
+    display: flex;
+    width: 90%;
+}
+
+.subtitle{
+    font-size: 130%;
+    font-weight: 100;
+    position: relative;
+    top: -4%;
+    left: 0%;
+    display: flex;
+    width: 90%;
+}
+
+.subsection{
+    position: relative;
+    top: -5%;
+    left: 0%;
+    display: flex;
+    width: 90%;
+    color: #7C7472;
+    align-items: center;
+    height: 5%;
+    justify-content: space-between;
+}
+
+.subsection > .author{
+    font-size: 100%;
+    font-weight: 600;
+    position: relative;
+    top: -5%;
+    left: 0%;
+    display: flex;
+    width: 90%;
+    color: #7C7472;
+}
+
+.subsection> .views{
+    display: flex;
+    width: 5%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.subsection> .views > img{
+    aspect-ratio: 1;
+    width: 45%;
+    position: relative;
+    top: 0%;
+    left: 0;
+}
+
+.subsection> .views > p{
+    font-size: 100%;
+    font-weight: 600;
+    display: flex;
+    color: black;
+}
+
+.box-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    height: 5%;
+    position: relative;
+    top: 45%;
+    left: -41%;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 3;
+}
+
+.box-wrapper > .box{
+    display: flex;
+    aspect-ratio: 1;
+    width: 15%;
+    border: 0.1em solid black;
+}
+
+.active{
+    background-color: black;
+}
+
+footer{
+    border-top: none;
+    bottom: -30%;
+}
+
+.fade{
+    animation: faded 1s ease-in-out;
+}
+
+@keyframes faded {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

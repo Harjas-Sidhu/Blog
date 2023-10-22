@@ -1,0 +1,81 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10%;
+    justify-content: space-between;
+    border-bottom: 0.1em solid var(--grey);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+}
+
+header>a {
+    height: 100%;
+    width: 15%;
+    border-right: 0.1em solid var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>a>img {
+    width: 35%;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+header>.right {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    right: 0;
+}
+
+header>.right>a {
+    display: flex;
+    height: 100%;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    border-left: 0.1em solid var(--grey);
+    overflow: hidden;
+}
+
+header>.right>a>div {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+}
+
+header> .right> a:before {
+    content: attr(data-value);
+    position: absolute;
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: all .25s ease-in-out;
+}
+
+header > .right > a:hover div{
+    opacity: 0; 
+    transform: translate(0%,-100%);
+}
+
+header > .right > a:hover:before{
+    opacity: 1; 
+    transform: translate(0,0);
+}

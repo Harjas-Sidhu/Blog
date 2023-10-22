@@ -1,0 +1,74 @@
+footer{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0.25%;
+    left: 0;
+    height: 10%;
+    justify-content: space-between;
+    border-top: 0.1em solid var(--grey);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 120%;
+}
+
+footer > a{
+    height: 100%;
+    width: 20%;
+    border-right: 0.1em solid var(--grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .brand{
+    font-family: 'montserrat', sans-serif;
+    font-size: 120%;
+}
+
+footer > .mail{
+    border: none;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 120%;
+}
+
+footer > .mail > img{
+    aspect-ratio: 1;
+    width: 4.5%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+footer > .right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    right: 0;
+}
+
+footer > .right > a{
+    display: flex;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    border-left: 0.1em solid var(--grey);
+}
+
+footer > .right > a > img{
+    aspect-ratio: 1;
+    width: 25%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
