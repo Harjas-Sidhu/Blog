@@ -1,0 +1,18 @@
+.blog-list{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 70%;
+    height: 193.83%;
+    flex-direction: column;
+    row-gap: 3%;
+}
+
+.foot{
+    bottom: -150.75%;
+}
+
+body{
+    height: 250.6vh;
+}

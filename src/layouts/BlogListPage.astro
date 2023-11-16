@@ -1,0 +1,25 @@
+---
+import BlogList from "../components/BlogList.astro";
+import BasicLayout from "./BasicLayout.astro";
+import "../styles/BlogListPage.css";
+---
+
+<BasicLayout pageTitle="Blogs | InkedInsights">
+    <div class="tagg">
+        #ALL
+        <div class="drop">
+            <div class="bar one"></div>
+            <div class="bar sec"></div>
+        </div>
+    </div>
+    <BlogList />
+    <div class="box-wrapper">
+        <div class="box active" onclick="makeActive(0);">1</div>
+        <div class="box" onclick="makeActive(1);">2</div>
+        <div class="box" onclick="makeActive(2);">3</div>
+        <div class="box" onclick="makeActive(3);">4</div>
+        <div class="box" onclick="makeActive(4);">5</div>
+        <div class="box" onclick="makeActive(5);">6</div>
+    </div>
+    <script src="/scripts/pagination.js" async></script>
+</BasicLayout>

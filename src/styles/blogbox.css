@@ -1,0 +1,136 @@
+.blogbox{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 25%;
+    border: 0.1em solid var(--grey);
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+.blogbox::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.1em solid black;
+    flex-direction: column;
+    overflow: hidden;
+    top: 2%;
+    left: 1%;
+    background-image: linear-gradient(transparent 50%, black 50%);
+    z-index: -3;
+    visibility: hidden;
+}
+
+.blogbox:hover::before{
+    visibility: visible;
+}
+
+.blogbox:hover > .title{
+    color: var(--blue);
+}
+
+.blogbox > img{
+    aspect-ratio: 2;
+    width: 45%;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+}
+
+.blogbox > .tag{
+    height: 11%;
+    width: 22%;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.blogbox > .title{
+    font-size: 150%;
+    position: absolute;
+    display: flex;
+    width: 44%;
+    top: 35%;
+    left: 3%;
+}
+
+.blogbox > .subtitle{
+    font-size: 110%;
+    font-weight: 100;
+    position: absolute;
+    display: -webkit-box;
+    width: 44%;
+    height: 16.5%;
+    top: 61%;
+    left: 3%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #7C7472;
+}
+
+.date {
+    font-size: 82%;
+    font-weight: 600;
+    position: relative;
+    top: 18%;
+    left: 3%;
+    display: flex;
+    width: 91%;
+    color: #7C7472;
+}
+
+.blogbox > .subsection{
+    position: absolute;
+    display: flex;
+    width: 90%;
+    color: #7C7472;
+    align-items: center;
+    height: 10%;
+    justify-content: space-between;
+    top: 85%;
+    left: 3%;
+}
+
+.blogbox > .subsection > .author{
+    font-size: 85%;
+    font-weight: 600;
+    position: absolute;
+    display: flex;
+    width: 90%;
+    color: #7C7472;
+}
+
+.blogbox > .subsection> .views{
+    display: flex;
+    width: 16%;
+    height: 100%;
+    position: relative;
+    left: 14%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.blogbox > .subsection> .views > img{
+    aspect-ratio: 1;
+    width: 15%;
+    position: relative;
+    left: 21%;
+}
+
+.blogbox > .subsection> .views > p{
+    font-size: 75%;
+    font-weight: 600;
+    display: flex;
+    color: black;
+}

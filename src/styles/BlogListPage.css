@@ -1,0 +1,66 @@
+.tagg{
+    display: flex;
+    position: absolute;
+    height: 5%;
+    width: 15%;
+    border: 0.1em solid var(--grey);
+    font-size: 100%;
+    top: 17%;
+    left: 80%;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding-left: 1%;
+}
+
+.drop{
+    position: relative;
+    aspect-ratio: 1;
+    width: 10%;
+    top: 30%;
+    left: -3%;
+    transform: rotateZ(45deg);
+}
+
+.drop > .bar{
+    position: absolute;
+    height: 65%;
+    background-color: black;
+    display: flex;
+    width: 3%;
+    border-radius: 10px;
+}
+
+.one{
+    transform: rotateZ(90deg);
+    transform-origin: left;
+    top: 31%;
+    left: -31%;
+}
+
+.box-wrapper{
+    position: absolute;
+    display: flex;
+    height: 5%;
+    width: 30%;
+    left: 35%;
+    top: 230%;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 9%;
+}
+
+.box{
+    font-size: 90%;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 12.5%;
+}
+
+.active{
+    background-color: #111111;
+    color: var(--white);
+}
