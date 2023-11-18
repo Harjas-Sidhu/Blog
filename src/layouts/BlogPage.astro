@@ -1,0 +1,48 @@
+---
+import BasicLayout from "./BasicLayout.astro";
+import "../styles/BlogPage.css";
+const views = 0;
+const date = "16/3/2019";
+---
+
+<BasicLayout pageTitle = "INKEDINSIGHTS | BLOG">
+    <div class="page">
+        <h1 class="title">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h1>
+        <img src="/hero.png" alt="hero-img" />
+        <div class="share">
+            <h4 class="share-text">
+                Share On:
+            </h4>
+            <div class="socials">
+                <div class="social-box">
+                    <img alt="social-" src="/linkedin.png"  />
+                </div>
+                <div class="social-box">
+                    <img alt="social-" src="/instagram.png"  />
+                </div>
+                <div class="social-box">
+                    <img alt="social-" src="/github.png"  />
+                </div>
+            </div>
+        </div>
+        <div class="tag-wrapper">
+            <div class="tag">Tag Implemented 1</div>
+            <div class="tag">Tag Implemented 2</div>
+            <div class="tag">Tag Implemented 3</div>
+        </div>
+        <div class="stats">
+            <img src="/logo.png" alt="profile-picture" />
+            <h1 class="author">Author is the/one that wrote</h1>
+            <div class="views">
+                <img src="/eye.png" alt="eye" />
+                <p>{views}</p>
+            </div>
+            <p class="date">Published on: {date}</p>
+        </div>
+        <h1 class="heading">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci omnis obcaecati ab voluptas similique laboriosam, provident quisquam eum minus unde odit est esse labore corporis assumenda error nostrum debitis ipsam. Ipsum repellendus cupiditate quas quo necessitatibus cumque libero dolore molestias!
+        </h1>
+    </div>
+</BasicLayout>
